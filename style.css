@@ -4,7 +4,8 @@
   --color-bg: #324376;
   --color-surface: #586ba4;
   --color-surface-hover: rgba(255, 255, 255, 0.12);
-  --color-text-main: #f8fafc;
+  --color-text-heading: #ffffff;
+  --color-text-body: #e2e8f0;
   --color-text-muted: #cbd5e1;
   --color-accent: #ff9f1c;
   --color-accent-hover: #ffae42;
@@ -53,6 +54,7 @@ body {
   font-family: var(--font-body);
   font-size: 1.0625rem;
   font-weight: 400;
+  color: var(--color-text-body);
   margin: 0;
 }
 
@@ -124,10 +126,27 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  color: var(--color-text-heading);
+}
+
 p,
-li {
-  color: var(--color-text-main);
+li,
+address {
+  color: var(--color-text-body);
+}
+
+address {
+  font-style: normal;
+}
+
+address a {
+  color: var(--color-accent);
+}
+
+address a:hover {
+  text-decoration: underline;
+  color: var(--color-accent-hover);
 }
 
 a:not([class]) {
@@ -301,7 +320,7 @@ footer {
 
 .project-description {
   margin: 0;
-  color: var(--color-text-main);
+  color: var(--color-text-body);
   line-height: 1.6;
 }
 
