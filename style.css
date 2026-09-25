@@ -50,6 +50,7 @@ body {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+  margin: 0;
 }
 
 h1,
@@ -105,4 +106,43 @@ textarea:not([rows]) {
 
 :target {
   scroll-margin-block: 5ex;
+}
+
+header {
+  background-color: #586ba4;
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-shadow: 0 4px 12px rbga(0, 0, 0, 0.15);
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition:
+    background-color 0.2 ease,
+    opacity 0.2s ease;
+}
+
+header nav a:hover,
+header nav a:focus-visible {
+  background-color: rbga(255, 255, 255, 0.15);
 }
