@@ -317,11 +317,18 @@ footer {
 .tag {
   display: inline-flex;
   align-items: center;
+  gap: 0.4rem;
   font-size: 0.8125rem;
   font-weight: 600;
-  padding: 0.25rem 0.75rem;
+  padding: 0.3rem 0.75rem;
   border-radius: 9999px;
   line-height: 1.2;
+}
+
+.tag svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  flex-shrink: 0;
 }
 
 .tag-html {
