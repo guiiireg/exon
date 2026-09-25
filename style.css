@@ -49,7 +49,7 @@ h4 {
   text-wrap: balance;
 }
 
-a:note([class]) {
+a:not([class]) {
   text-decoration-skip-ink: auto;
   color: currentColor;
 }
