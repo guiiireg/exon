@@ -1,4 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap");
+
+:root {
+  --color-bg: #324376;
+  --color-surface: #586ba4;
+  --color-surface-hover: rgba(255, 255, 255, 0.12);
+  --color-text-main: #f8fafc;
+  --color-text-muted: #cbd5e1;
+  --color-accent: #ff9f1c;
+  --color-accent-hover: #ffae42;
+  --font-title: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
 
 *,
 *::before,
