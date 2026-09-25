@@ -175,3 +175,19 @@ header nav a:hover,
 header nav a:focus-visible {
   background-color: rbga(255, 255, 255, 0.15);
 }
+
+main,
+footer {
+  max-width: 760px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+main {
+  padding-block: 2rem;
+}
+
+footer {
+  padding-block-end: 2.5rem;
+}
+
