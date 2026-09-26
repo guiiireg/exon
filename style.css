@@ -476,3 +476,29 @@ footer {
   margin: 0;
 }
 
+#introduction article {
+  background-color: var(--color-surface);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#introduction article:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 159, 28, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+#introduction article:first-of-type {
+  margin-block-start: 1.5rem;
+}
+
+#introduction article:last-of-type {
+  border-left: 4px solid var(--color-accent);
+}
+
